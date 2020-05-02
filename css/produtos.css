@@ -1,0 +1,183 @@
+.interna_produtos {
+	background: url("../img/bg-produtos.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.produto_item {
+	padding-top: 60px;
+}
+
+.produto_item h2 {
+	color: #ffffff;
+	font-size: 36px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-weight: bold;
+	position: relative;/*colocando a frase em cima da foto*/
+	top: -180px;/*definindo em q parte da foto a frase vai ficar*/
+	text-align: center;
+	margin-bottom: -56px;
+}
+
+.produto_item h2:after,.produto_item h2:before {
+	content: ""; 
+    display: block;/*queremos ele em bloco*/
+    width: 60px;
+    height: 3px;/*altura*/
+    background: #ffffff;
+    margin: 6px auto 8px auto;
+}
+
+
+
+.produto_icone {
+	background: #000000;
+	padding: 70px 0;/*aumentando o tamanho da foto*/
+}
+
+.produto_icone img {	
+	margin: 0 auto;/*alinhando a img ao centro*/
+}
+
+.produto_info {
+	background: #000000;
+}
+
+.produto_info p {
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 25px;
+	height: 180px;
+	padding: 50px 40px;
+}
+
+.produto_info ul li {
+	background: #FEC63E;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	float: left;/*para ficar um do lado do outra na lista*/
+	width: 229px;
+	height: 49px;
+	text-align: center;
+	padding-top: 16px;/*alinhando o texto ao centro na tabela*/	
+}
+
+.produto_info ul li:nth-child(1), .produto_info ul li:nth-child(2) {/*criando linhas na tabela*/
+	margin-bottom: 2px;
+}
+
+.produto_info ul li:nth-child(even) { /*odd vai falar com todos os numeros impares e o even fala com todos os pares*/
+	margin-left: 2px;
+	
+}
+
+/*Orçamento*/
+
+.orcamento {
+	background: #000000;
+	width: 100%;
+	margin-top: 60px;
+	padding: 40px 0;
+}
+
+.orcamento h2 {
+	color: #FEC63E;
+}
+
+.orcamento h2:after{
+	background: #FEC63E;
+}
+.form {
+padding-right: 60px;
+
+}
+
+.form label {
+	display: block;
+	color: #ffffff;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 4px;
+
+}
+
+.form input {
+	display: block;
+	width: 100%;
+	border: 4px solid #FEC63E ;
+	background: none;
+	color: #ffffff;
+	padding: 7px 10px;
+	margin-bottom: 10px;
+	outline: none;
+	font-size: 14px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.form textarea {
+	display: block;
+	width: 100%;
+	height: 120px;
+	border: 4px solid #FEC63E ;
+	background: none;
+	color: #ffffff;
+	padding: 7px 10px;
+	margin-bottom: 20px;
+	outline: none;
+	font-size: 14px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.form button {
+	padding: 7px 40px;
+	background: none;
+
+}
+
+.orcamento_dados {
+	color: #ffffff;
+}
+
+.orcamento_dados h3 {
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #FEC63E;
+	font-weight: bold;
+
+}
+
+.orcamento_dados span {
+	display: block;
+	font-size: 18px;
+	line-height: 30px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.orcamento_dados span:nth-of-type(2) {
+	margin-bottom: 40px;/*descemos um pouco o segundo texto*/
+}
+
+.orcamento_dados ul li {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 14px;
+	padding: 10px 15px;
+
+}
+
+.orcamento_dados ul {
+	padding-right: 60px;
+}
+.orcamento_dados ul li:nth-child(odd) {
+	background: #1d1d1d;
+
+}
+
+.orcamento_dados p {
+	margin: 8px 0;
+}

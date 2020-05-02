@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Bikcraft - Conheça o portfolio de clientes</title>
+        <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft.
+        Posssuimos modelos Passeio,Retrô e Esporte."><!--palavras chaves para busca no google-->
+
+        <!--essas tag servem para fala com o facebook,assim facilita o compatilhamento do site-->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Bikcraft - Conheça o portfolio de clientes"/>
+        <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft.
+        Posssuimos modelos Passeio,Retrô e Esporte."/>
+        <meta property="og:url" content="http://bikcraft.com/portfolio.html"/>
+        <meta property="og:image" content="http://bikcraft.com/img/og-image.png"/>
+        <!--fim --> 
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!--para melhorar o responsivo-->
+
+
+       <!-- <link rel="shortcut icon" href="favicon.ico"> icone na aba do navegador-->
+
+        <!--icone na aba do navegador-->
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="##FEC63E">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="##FEC63E">
+
+        <!--<link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/grid.css"> Não é mais necessario pois juntamos em um so -->
+        <link rel="stylesheet" href="css/style.css"><!-- era css/style.css antes de juntar tudo agr na pasta ele esta como style rowque é style cru-->
+ <!-- <link rel="stylesheet" href="css/responsivo.css"> responsivo smpr tem q ficar embaixo de style-->
+
+        <script>document.documentElement.classList.add("js"); </script>
+    </head>
+    <body>
+        <header class="header"> <!--criamos essa classe para caso precise chamar essa tag no css-->
+            <div class="container"><!--essa div será nosso container onde ficará o nosso menu,definimos uma classe para poder stylizar o nosso menu,esse stylo"container" ja definimos qual sera no grid-->
+                <a href="index.html" class="grid-4"><!--criamos o href para quando clicar em cima do logo da marca voltar para a pag inicial,definimos a class com o grid 4  nessa tag pois é a tag a que esta envolvendo a nossa imagem-->
+                    <img src="img/bikcraft.svg" alt="Bikcraft"><!--img/ é a pasta que a imagem está,o alt é para texto alternativo caso a img nao carregue ou caso um leitor de tela apareça lendo o seu site-->
+                </a>
+                <nav class="grid-12 header_menu"><!--a tag nav é uma tag estrutural da navegação,aqui começa nosssa navegaçao-->
+                    <ul>
+                        <li><a href="sobre.html">Sobre</a></li><!--a tag a é uma ancora,nessa ancora colocamos o href para criar um link//o menu ativo serve para mudar de cor o menu q vc esta-->
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="portfolio.html" class="menu_ativo">Portfólio</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="introducao-interna interna_portfolio" >
+        <div class="container"><!--criamos a div container pq a section pega 100% e o container tem 960px-->
+            <h1 data-anime="400" class="fadeInDown">Portfólio</h1>
+            <p data-anime="800" class="fadeInDown">Conheça os projetos que amamos mostrar</p>
+        </div>
+        </section>
+
+        <section class="container fadeInDown" data-slide="quote" data-anime="1200">
+            <blockquote class="quote_clientes">
+                <p>"a bike virou meu meio de transporte durante minhas férias em Londres,me diverti muito.
+                    Estou muito animada e hoje os passeios de bike fazem parte da minha rotina." </p>
+                <cite>Barbara Moss</cite></blockquote>
+           
+            <blockquote class="quote_clientes">
+                <p>"Sentia algumas dores na lombar e não estava satisfeito com meu desempenho quando subia.
+                    Estou muito satisfeito com o serviço feito e recomendo.
+                    Hoje desfruto de momentos únicos e de grande satisfação em cima da bike
+                    e deixo aqui o agradecimento eterno" </p>
+                <cite>Marta Ferreira</cite></blockquote>
+            
+            <blockquote class="quote_clientes">
+                <p>"Pedalar era um sonho, hoje é realidade. Pedalar pode ser um esporte,
+                    um meio de transporte, contribuir com a nossa saúde e o nosso bem estar mas acima de tudo é um momento de pura magia, de leveza,
+                    de encontro com o nosso eu verdadeiro e os diversos lugares e o contato com toda a natureza,
+                    que muitas vezes esquecemos que também fazemos parte." </p>
+                <cite>Maria Odette</cite></blockquote>
+           
+        </section>
+
+        <section class="portfolio">
+            <div class="container" data-slide="portfolio"><!--o slide sempre vai no que esta segurando esse bloco q no caso é o container-->
+                <ul class="portfolio_lista">
+                    <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô"></li>
+                    <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
+                    <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
+                </ul>         
+                
+                <ul class="portfolio_lista">
+
+                    <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
+                    <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô"></li>                 
+                    <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
+                </ul> 
+            </div>
+        </section>    
+        
+       <div class="quebra">
+        <blockquote class="quote-externo container"><!--uma tag para citaçao-->
+            <p><!--tag para paragrafo-->
+                " O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana"
+            </p>
+            <cite><!--tag quem citou-->
+                WILLIAM MORRIS
+            </cite>
+        </blockquote>
+    </div>
+
+       <footer>
+           <div class="footer">
+           <div class="container">
+
+            <div class="grid-8 footer_historia">
+            <h3>NOSSA HISTÓRIA</h3>
+            <p>O verdadeiro segredo da felicidade está em ter um genuíno
+               interesse por todos os detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.</p>
+           </div>
+
+           <div class="grid-4 footer_contato">
+               <h3>Contato</h3>
+               <ul>
+                    <li>- 11 9999-9999</li>
+                    <li>- contato@bikcraft.com</li>
+                    <li>- Jabaquara - SP</li>
+                </ul>
+           </div>
+
+            <div class="grid-4  footer_redes">
+                <h3>Contato</h3>
+                <ul>
+                    <li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="facebook Bikcraft"></a></li><!--o target serve para quando clicar no link abrir em uma nova aba-->
+                    <li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="instagram Bikcraft"></a></li>
+                    <li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="twitter Bikcraft"></a></li>
+                </ul>
+            </div>
+
+            </div>
+           </div>
+           <div class="copy">
+            <div class="container">
+               <p class="grid-16">Bikecraft 2020 - Alguns direitos reservados</p>
+            </div>
+           </div>
+       </footer>
+
+       <script src="./js/simple-slide.js"></script>/<!--plugin do slide,esta aqui pq é nessa pag que vai carregar o slide-->            
+       <script src="./js/simple-anime.js"></script>
+       <script src="./js/script.js"></script>
+
+    </body>
+</html>

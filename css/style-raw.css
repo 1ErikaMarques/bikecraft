@@ -1,0 +1,476 @@
+/* Estilos gerais*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}  
+
+p{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+img {
+    display: block;/*para a imagem ficar do tamanho q ela realmente é*/
+    max-width: 100%;/*para a img ficar fluida quando tornarmos o site responsivo,a img vai se adaptar pq o tamanho mx dela é 100%*/
+}
+
+.btn {
+    border: 3px solid #FEC63E;/*criando a borda do botão*/
+    padding: 10px 30px;
+    color: #FEC63E;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+    
+}
+
+.btn:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn.btn-preto:hover {/*o hover que faz a funçao de quando passa o mouse em cima muda de cor*/
+    color: #000000;
+    border-color: #000000;
+}
+
+.subtitulo {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;/*dando espaço entre o titulo e a section*/
+}
+
+.subtitulo:after {
+    content: ""; /*é obrigatorio msm q n tenha nd dentro*/
+    display: block;
+    width: 60px;
+    height: 3px;/*altura*/
+    background: #000000;
+    margin: 8px auto;
+}
+
+.subtitulo-interno {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 20px;/*dando espaço entre o titulo e o texto*/
+}
+
+.subtitulo-interno:after {
+    content: ""; /*é obrigatorio msm q n tenha nd dentro*/
+    display: block;
+    width: 60px;
+    height: 3px;/*altura*/
+    background: #000000;
+    margin: 8px 0;
+}
+
+/*Header*/
+
+.header {
+    position: fixed;/*para o nosso menu ficar fixo*/
+    top: 0;
+    width: 100%;/*a cor pegue de ponta a ponta*/
+    background: #FEC63E;
+    padding: 15px 0;
+    z-index: 10;/*para o menu ficar pro cima de tudo*/
+}
+
+.header_menu {
+    text-align: right;
+   
+}
+
+.header_menu ul li { /*ul li é um  elemento de bloco sendo assim as frases ficam uma embaixo da outra e queremos uma do lado da outra entao vamos mudar isso agr*/
+    display: inline-block;
+    margin-left: 25px;/*espaço que cada frase vai ter entre cada uma*/
+    margin-top: 20px;/*alinhando o menu,um pouco para baixo*/
+}
+
+.header_menu ul li a { /*para definir a tipografia nesse momento estamos falando apenas com o a que esta dentro dessas outras tags por isso citamos elas*/
+    color: #000000;
+    font-weight:  bold;
+    text-transform: uppercase;/*tudo em letra maiuscula*/
+    letter-spacing: .1em;/*espaço entre as letras*/
+    font-size: 14px;
+    line-height: 20px;/*a quebra de linha terá 20px*/
+    padding: 10px 0;/*aumentando o tamanho de quando passamos o mouse em cima 10px pra cima e baixo e 0 para a esquerda e direita*/
+}
+
+.header_menu ul li a:hover { /*quando passar o mouse por cima muda a cor,hover é uma pseuda classe*/
+    color: #ffffff;
+}
+
+.header_menu ul li a.menu_ativo {/*para mudar de cor o menu q vc esta*/
+    color: #ffffff;
+}
+
+/*Introdução*/
+
+.introducao {
+    width: 100%;
+    height: 380px;/*tamanho da foto que definimos no adobe XD*/
+    background: url("../img/bg.jpg") no-repeat center;/*os ../ é para ele voltar uma pasta e procurar o arquivo q é a foto*/
+    background-size: cover;/*cover para que cubra inteira*/
+    margin-top: 92px;/*criamos uma margim pois ele esta em cima do menu*/
+    text-align: center;/*Tudo alinhado ao centro*/
+    padding-top: 80px;
+}
+
+.introducao h1 {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.quote-externo {
+    max-width: 320px;/*tamanho max que essa citaçao pode ter,caso seja maior ele quebra a linha sozinho*/
+    margin: 0 auto;/*para alinha no centro*/
+    color: #ffffff;
+    margin-bottom: 40px;
+
+}
+
+.quote-externo p {/*estou falando apenar com o paragrafo da citaçao*/
+    font-style: italic;
+}
+
+.quote-externo p:before,.quote-externo p:after {/*criando os separadores,o before cria o primeiro e o after o segundo*/
+    content: ""; /*é obrigatorio msm q n tenha nd dentro*/
+    display: block;/*queremos ele em bloco*/
+    width: 60px;
+    height: 3px;/*altura*/
+    background: #ffffff;
+    margin: 14px auto 10px auto;/*14px em cima,auto diteita,10px em baixo,auto esquerda é assim quando estao 4 propriedades*/
+
+
+}
+
+.quote-externo cite {
+    font-style: normal;/*para nao pegar a font italic que definimos*/
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .1em;/*espaço entre cada palavra*/
+}
+
+/*Introduçao Interna*/
+
+.introducao-interna {
+    width: 100%;
+    margin-top: 92px; 
+    height: 160px;         
+    text-align: center;
+    color: #ffffff;
+    padding-top: 30px;/*Alinhando o texto para ficar no meio da foto*/
+}
+
+.introducao-interna h1 {/*mudando o estilo do texto*/
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.introducao-interna h1:after {/*criando o separador*/
+    content: ""; 
+    display: block;/*queremos ele em bloco*/
+    width: 60px;
+    height: 3px;/*altura*/
+    background: #ffffff;
+    margin: 6px auto 10px auto;
+}
+
+/*Produtos*/
+
+.produtos {
+    padding: 60px 0;
+
+}
+
+.produtos_lista li {
+    background: #FEC63E;    
+    text-align: center;
+}
+
+.produtos_lista li img {
+    margin: 0 auto;/*img ao centro*/
+
+}
+
+.produtos_lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+}
+
+.produtos_lista li h3:after {
+    content: ""; /*é obrigatorio msm q n tenha nd dentro*/
+    display: block;
+    width: 60px;
+    height: 3px;/*altura*/
+    background: #000000;
+    margin: 2px auto;
+}
+
+.produtos_lista li p {
+    padding: 10px 20px 20px 20px;
+}
+
+.produtos_icone {   
+    background: black;
+    padding: 20px;
+   
+}
+
+.call {
+    padding-top: 40px;
+    text-align: center;
+    clear: both;
+}
+
+.call p {
+    margin-bottom: 20px;
+}
+
+/*Portfólio*/
+
+.portfolio {
+    width: 100%;
+    background: #000000;
+    padding: 40px 0;
+}
+
+.portfolio .subtitulo {
+    color: #FEC63E;
+}
+
+.portfolio .subtitulo:after {
+    background: #FEC63E;
+}
+
+.portfolio_lista li:last-child {/*alinhanho a margem da ultima foto do portfolio*/
+    margin-top: 20px;
+
+}
+
+.portfolio .call p {
+    color: #ffffff;
+} 
+
+/*Qualidade*/
+
+.qualidade {
+    padding: 60px 0;
+}
+
+.qualidade:after {
+    content: "";
+    width: 634px;
+    height: 83px;
+    display: block;
+    background: url("../img/linhas.svg") no-repeat center;
+    position: absolute;/*para ser absoluto ao container de qualidade*/
+    top: 209px;
+    right: 162px;
+    z-index: -1;
+}
+
+.qualidade img {/*Alinhando a img ao centro*/
+    margin: 0 auto;
+}
+
+.qualidade_lista {
+    padding-top: 20px;
+    overflow: auto;/*clear fix para limpar a flutuação*/
+}
+
+.qualidade_lista li {
+    text-align: center;
+    padding: 0 40px;
+}
+
+.qualidade_lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+}
+
+.qualidade_lista li h3:after {
+    content: ""; /*é obrigatorio msm q n tenha nd dentro*/
+    display: block;
+    width: 60px;
+    height: 3px;/*altura*/
+    background: #000000;
+    margin: 6px auto;
+}
+
+/*Quebra*/
+
+.quebra {
+    width: 100%;
+    height: 220px;
+    background: url("../img/bg-footer.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+.quebra .quote-externo{
+    max-width: 400px;
+    padding-top: 40px;  
+}
+
+/*Footer*/
+
+.footer{
+    width: 100%;
+    background: #000000;
+    color: #ffffff;
+    padding:20px 0;
+}
+
+.footer h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #FEC63E;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+
+.footer h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #FEC63E;
+    margin: 6px 0 12px 0;
+
+}
+
+.footer_historia {
+    padding-right: 40px;
+}
+
+.footer_contato ul li {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.footer_redes ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer_redes ul li a {
+    border: 3px solid #FEC63E;
+    display: block;
+    padding: 10px ;
+}
+
+.footer_redes ul li a:hover {
+    border-color: #ffffff;
+}
+
+.copy {
+    width: 100%;
+    background: #FEC63E;
+    padding: 20px 0;
+
+}
+
+/*JAVASCRIPT*/
+
+.js [data-slide] {/* o .js quer dizer q esses estilos so serao aplicados se o js existir entao se der um bug no js volta para o estilo q era antes*/
+    position: relative;
+  }
+.js [data-slide] > * {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+  }
+.js [data-slide] > .active {
+    position: relative;
+    opacity: 1;
+    transition: opacity 500ms;
+    /*quero q a transiçao vá do 0 para o 1 em 500ms que sao 500 mili segundos*/
+  }
+
+.js [data-slide-nav]{ /*mudando o estilo dos botoes do slide*/
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+.js [data-slide-nav] button {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+    border: none;
+    padding: 0px;
+    border-radius: 6px;/*para o botao ser em formato redondo*/
+    text-indent: -99px;/*os numeros n vao mais aparecer nos botoes vai ser jogado para fora dos botoes*/
+    overflow: hidden;/*para n mostrar nd q fique do lado de fora*/
+    background: #1d1d1d;
+    }
+
+.js [data-slide-nav] button.active { /*quando clica no botao ele fica amarelo*/
+    background: #FEC63E;
+    }
+
+.js [data-anime]{/**/
+    opacity: 0;
+    transform: translate3d(0,-120px, 0);
+   /* transform: rotate(360deg);*/
+}
+
+.js .fadeInDown {/*definimos uma classe fadeInDown q animaçao vai vir de baixo*/
+    transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+    opacity: 1;
+    transform: none;
+    transition: opacity 800ms, transform 800ms;
+}
+
+.nao-aparece {/*para esses campos n aparecerem no formulario,campos feitos para o robo do spam*/
+    visibility: hidden;
+    position: absolute;
+    height: 0px;
+}
+
+/*msg no formulario*/
+
+#form-sucesso{
+    color: #31aa39;
+
+}
+
+#form-erro{
+    color: #f64540;
+}
+
+
+
+
+

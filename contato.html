@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bikcraft - Contato - 11 9999-9999</title>
+    <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft.
+    Posssuimos modelos Passeio,Retrô e Esporte."><!--palavras chaves para busca no google-->
+
+    <!--essas tag servem para fala com o facebook,assim facilita o compatilhamento do site-->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Bikcraft - Contato - 11 9999-9999"/>
+    <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft.
+    Posssuimos modelos Passeio,Retrô e Esporte."/>
+    <meta property="og:url" content="http://bikcraft.com/contato.html"/>
+    <meta property="og:image" content="http://bikcraft.com/img/og-image.png"/>
+    <!--fim --> 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--para melhorar o responsivo-->
+
+
+    <!--<link rel="shortcut icon" href="favicon.ico"> icone na aba do navegador-->
+
+    <!--icone na aba do navegador-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="##FEC63E">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="##FEC63E">
+    
+    <!--<link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/grid.css"> Não é mais necessario pois juntamos em um so -->
+        <link rel="stylesheet" href="css/style.css"><!-- era css/style.css antes de juntar tudo agr na pasta ele esta como style rowque é style cru-->
+ <!-- <link rel="stylesheet" href="css/responsivo.css"> responsivo smpr tem q ficar embaixo de style-->
+    
+    <script>document.documentElement.classList.add("js"); </script>
+</head>
+
+<body>
+    <header class="header">
+        <!--criamos essa classe para caso precise chamar essa tag no css-->
+        <div class="container">
+            <!--essa div será nosso container onde ficará o nosso menu,definimos uma classe para poder stylizar o nosso menu,esse stylo"container" ja definimos qual sera no grid-->
+            <a href="index.html" class="grid-4">
+                <!--criamos o href para quando clicar em cima do logo da marca voltar para a pag inicial,definimos a class com o grid 4  nessa tag pois é a tag a que esta envolvendo a nossa imagem-->
+                <img src="img/bikcraft.svg" alt="Bikcraft">
+                <!--img/ é a pasta que a imagem está,o alt é para texto alternativo caso a img nao carregue ou caso um leitor de tela apareça lendo o seu site-->
+            </a>
+            <nav class="grid-12 header_menu">
+                <!--a tag nav é uma tag estrutural da navegação,aqui começa nosssa navegaçao-->
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <!--a tag a é uma ancora,nessa ancora colocamos o href para criar um link//o menu ativo serve para mudar de cor o menu q vc esta-->
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html" class="menu_ativo">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="introducao-interna interna_contato">
+        <div class="container">
+            <!--criamos a div container pq a section pega 100% e o container tem 960px-->
+            <h1 data-anime="400" class="fadeInDown">Contato</h1>
+            <p data-anime="800" class="fadeInDown">Tire as suas dúvidas com a gente</p>
+        </div>
+    </section>
+
+    <section class="contato container fadeInDown" data-anime="1200">
+        <form id="form_orcamento" method="POST" action="./enviar-sendgrid.php" class="contato_form grid-8 formphp">
+            <!--colocamos um id para quando for falar com o php para enviar o formulario,add method e caminho para configurar o php e receber os emails do formulario-->
+            <label for="nome">Nome</label>
+            <!--label é o nome do campo do formulario-->
+            <input type="text" id="nome" name="name" required>
+            <!--o tipo de dado que nosso formulario vai receber-->
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+            <!--defino os name para o php conseguir pegar esses dados-->
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone">
+
+            <!--Campos para o robo n conseguir enviar span-->
+            <label class="nao-aparece">Se você não é um robô,deixe em branco.</label>
+            <input type="text" class="nao-aparece" name="leaveblank">
+            <label class="nao-aparece">Se você não é um robô,não mude esse campo.</label>
+            <input type="text" class="nao-aparece" name="dontchange" value="http://">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
+        </form>
+        <div class="contato_dados grid-8">
+            <h3>Dados</h3>
+            <span>+55 11 9999-9999</span>
+            <span>orçamento@bikcraft.com</span>
+            <span>Rua Logo Ali - Jabaquara</span>
+            <span>São Paulo - SP - Brasil</span>
+            <h3>Redes Sociais</h3>
+            <ul>
+                <li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="facebook Bikcraft"></a></li>
+                <!--o target serve para quando clicar no link abrir em uma nova aba-->
+                <li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt=" instagram Bikcraft"></a></li>
+                <li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="twitter Bikcraft"></a></li>
+            </ul>
+            </div>
+    </section>
+
+    <section class="container contato_mapa">
+        <a href="http://google.com" target="blank" class="grid-16"><img src="img/endereco-bikcraft.jpg"
+                alt="Endereço da Bikcraft"></a>
+    </section>
+
+    <div class="quebra">
+        <blockquote class="quote-externo container">
+            <!--uma tag para citaçao-->
+            <p>
+                <!--tag para paragrafo-->
+                " O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida
+                cotidiana"
+            </p>
+            <cite>
+                <!--tag quem citou-->
+                WILLIAM MORRIS
+            </cite>
+        </blockquote>
+    </div>
+
+         <footer>
+        <div class="footer">
+            <div class="container">
+
+                <div class="grid-8 footer_historia">
+                    <h3>NOSSA HISTÓRIA</h3>
+                    <p>O verdadeiro segredo da felicidade está em ter um genuíno
+                        interesse por todos os detalhes da vida cotidiana. Interesse por todos os detalhes da vida
+                        cotidiana.</p>
+                </div>
+                
+                <div class="grid-4 footer_contato">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>- 11 9999-9999</li>
+                        <li>- contato@bikcraft.com</li>
+                        <li>- Jabaquara - SP</li>
+                    </ul>
+                </div>
+                
+                <div class="grid-4  footer_redes">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="facebook Bikcraft"></a>
+                        </li>
+                        <!--o target serve para quando clicar no link abrir em uma nova aba-->
+                        <li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="instagram Bikcraft"></a>
+                        </li>
+                        <li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="twitter Bikcraft"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="copy">
+            <div class="container">
+                <p class="grid-16">Bikecraft 2020 - Alguns direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/simple-anime.js"></script><!--plugin de animaçao da pag-->
+    <script src="./js/simple-form.js"></script>/<!--plugin do formulario-->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
